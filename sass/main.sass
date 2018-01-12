@@ -212,11 +212,22 @@ h2, p
 		height: 60%
 .content-container
 	background-color: #333333
+	opacity: .9
 	padding: 10px 25px
 	display: flex
+	border-radius: 4px
+	@media screen and (max-width: 767px)
+		display: block
 	p
 		color: $color
 		line-height: 1.5em
+		margin: 0 1em 0 1em
+		@media screen and (max-width: 767px)
+			margin: 1em 0 0 0
+	h3
+		max-width: 200px
+.service-description
+	max-width: 450px
 .price
 	color: #FC0107
 	padding: 1em
@@ -269,6 +280,7 @@ input
 	-o-transition: 0.5s
 	transition: 0.5s
 	padding: 4px 20px
+	cursor: pointer
 	&.btn-md
 		padding: 8px 20px !important
 	&.btn-lg
@@ -279,6 +291,7 @@ input
 	background: $form-bg
 	color: $color
 	border: 2px solid $dark
+	width: 115px
 	&:hover, &:focus, &:active
 		background: $form-bg !important
 		border-color: $color !important
