@@ -2,6 +2,10 @@ $color: #fff
 $dark: #bbbbbb
 $bg: #000
 $form-bg: #383838
+%btn-style
+	box-shadow: none !important
+	outline: none !important
+	color: $dark
 html
 	width: 100%
 	height: 100%
@@ -270,9 +274,7 @@ input
 	&.btn-lg
 		padding: 18px 36px !important
 	&:hover, &:active, &:focus
-	box-shadow: none !important
-	outline: none !important
-	color: $dark
+		@extend %btn-style
 .btn-primary
 	background: $form-bg
 	color: $color
@@ -329,4 +331,3 @@ input
 		right: 160px
 		@media screen and (max-width: 768px)
 			right: 55px
-
