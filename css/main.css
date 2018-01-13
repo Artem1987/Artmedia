@@ -305,7 +305,7 @@ input {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 4px 20px;
+  padding: 4px;
   cursor: pointer; }
   .btn.btn-md {
     padding: 8px 20px !important; }
@@ -316,7 +316,8 @@ input {
   background: #383838;
   color: #fff;
   border: 2px solid #bbbbbb;
-  width: 115px; }
+  width: 115px;
+  text-align: center; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #383838 !important;
     border-color: #fff !important;
