@@ -331,18 +331,18 @@
 		<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js" async defer></script>
 		<!-- Form send mail script ajax -->
 		<script type="text/javascript">
-$(document).ready(function(){
-    $("#form").submit(function() {
-            var form_data = $(this).serialize();
-            $.ajax({
-            type: "POST", 
-            url: "send.php",
-            data: form_data,
-            success: function() {
+		$(document).ready(function(){
+    		$("#form").submit(function() {
+	            var form_data = $(this).serialize();
+	            $.ajax({
+	            type: "POST", 
+	            url: "send.php",
+	            data: form_data,
+	            success: function() {
                    alert("Ваше сообщение отпрвлено!");
-            });
-    });
-});    
+            	});
+		    });
+		});    
 </script>
 	</body>
 </html>
