@@ -12,6 +12,9 @@
 		<link href="css/main.css" rel="stylesheet">
 	</head>
 	<body>
+		<div id="page-preloader" class="preloader">
+			<div class="loader"></div>
+		</div>
 		<div id="project-bar" class="project-bar">
 			<nav class="hamburger-menu navbar">
 				<div class="bar">
@@ -25,13 +28,13 @@
 					<div class=" navbar-collapse" id="navbarToggler">
 					    <ul class="navbar-nav mr-auto">
 					      	<li class="nav-item active">
-					        	<a class="nav-link" href="index.html#project-main" onclick="currentSlide(1)">Главная <span class="sr-only">(current)</span></a>
+					        	<a class="nav-link" href="index.php#project-main" onclick="currentSlide(1)">Главная <span class="sr-only">(current)</span></a>
 					      	</li>
 					      	<li class="nav-item">
-						        <a class="nav-link" href="index.html#project-service" onclick="currentSlide(2)">Прайс-лист<span class="sr-only">(current)</span></a>
+						        <a class="nav-link" href="index.php#project-service" onclick="currentSlide(2)">Прайс-лист<span class="sr-only">(current)</span></a>
 						     </li>
 						    <li class="nav-item">
-						        <a class="nav-link" href="index.html#project-about" onclick="currentSlide(3)">О нас<span class="sr-only">(current)</span></a>
+						        <a class="nav-link" href="index.php#project-about" onclick="currentSlide(3)">О нас<span class="sr-only">(current)</span></a>
 						     </li>
 					    	<li class="nav-item">
 					        	<a class="nav-link" href="#project-contacts" onclick="currentSlide(4)">Контакты<span class="sr-only">(current)</span></a>
@@ -46,22 +49,7 @@
 		<div id="page" class="page">
 			<div id="project-main" class="one-page active" style="background-image: url(images/bg2.jpg);">
 					<!-- Social contacts menu -->
-				<div class="row justify-content-between align-items-center">
-					<div class="col-md-auto"></div>
-					<div class="col-md-auto">
-						<ul class="project-social-icons">
-							<li><a href="mailto:xortica87@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-							<li><a href="viber://forward?text=380665458441"><i class="fab fa-viber"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/artem-safonov-5a52a6149/"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" class="skype-button rounded" data-contact-id="artem_safonov"><i class="fab fa-skype"></i></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=380665458441"><i class="fab fa-whatsapp-square"></i></a></li>
-							<li><a href="tg://resolve?domain=artem_safonov"><i class="fab fa-telegram"></i></a></li>
-							<li>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
+				<?php require 'social-contacts-menu.php'; ?>
 				<!-- Social contacts menu end-->
 				<div class="row">
 					<div class="col-md"></div>
@@ -78,33 +66,19 @@
 				</div>
 				
 				<!-- Content-page -->
-				<div class="container page-content-center">
-					<form action="send.php" enctype="text/plain" class="project-form" method="post">
-						<div class="row form-group">
-							<div class="col-md-6">
-								<input type="text" id="fname" class="form-control" placeholder="Ваше имя" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-6">
-								<input type="text" id="lname" class="form-control" placeholder="Ваша фамилия" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<input type="text" id="email" class="form-control" placeholder="Ваш email" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Сообщение пишите сюда" required></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Отправить" class="btn btn-primary">
-						</div>
-					</form>
-					<h3><?php include "send.php" ?></h3>
+				<div class="container">
+					<div class="col-md-3"></div>
+					<div class="col-md-auto col-sm-8">
+						<ul class="project-main_content">
+							<li>Разработка web-сайтов от идеи до запуска Вашего бизнеса в Internet</li>
+							<li>Web-дизайн, верстка и seo-оптимизация интернет сайтов</li>
+							<li>У нас нет офиса, поэтому мы предлагаем Вам цену на 20% ниже</li>
+							<li>Я, Артём Сафонов, лично отвечаю за каждый сделанный нами сайт</li>
+							<li>Сроки выполнения заказа от 1 дня. Обсуждается индивидуально</li>
+						</ul>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>
 				</div>
 				<div class="row justify-content-center align-items-center content-cms">
 					<div class="col-md-auto content-cms-item">
@@ -129,19 +103,7 @@
 			<!-- Page 02 -->
 			<div id="project-service" class="one-page" style="background-image: url(images/bg.jpg); opacity= .6 ;">
 				<!-- Social contacts menu -->
-				<div class="row justify-content-between align-items-center">
-					<div class="col-md-auto"></div>
-					<div class="col-md-auto">
-						<ul class="project-social-icons">
-							<li><a href="mailto:xortica87@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-							<li><a href="viber://forward?text=380665458441"><i class="fab fa-viber"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/artem-safonov-5a52a6149/"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" class="skype-button rounded" data-contact-id="artem_safonov"><i class="fab fa-skype"></i></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=380665458441"><i class="fab fa-whatsapp-square"></i></a></li>
-							<li><a href="tg://resolve?domain=artem_safonov"><i class="fab fa-telegram"></i></a></li>
-						</ul>
-					</div>
-				</div>
+				<?php require 'social-contacts-menu.php'; ?>
 				<!-- Social contacts menu end-->
 				<div class="row">
 					<div class="container project-service_content">
@@ -152,11 +114,11 @@
 									<img src="images/landing-199x145.jpg" alt="landing-page">
 									</div>
 								<div class="content-container_block service-description">
-									<p>Одностраничный сайт (Landing Page), соответствующий всем современным требованиям. Используется как сайт-визитка или для представления потенциальным покупателям определенного товара(услуги)</p>
+									<p>Одностраничный сайт (Landing Page), соответствующий всем современным требованиям. Используется как сайт-визитка или для представления определенного товара(услуги) потенциальным покупателям</p>
 								</div>
 								<div class="content-container_block">
 									<div class="price">от 3000 грн</div>
-									<div class="btn btn-primary">Заказать</div>
+									<div class="btn btn-primary"><a href="#project-contacts" onclick="currentSlide(4)">Заказать</a></div>
 								</div>
 							</div>
 						</div>
@@ -171,7 +133,7 @@
 								</div>
 								<div class="content-container_block">
 									<div class="price">от 5500 грн</div>
-									<div class="btn btn-primary">Заказать</div>
+									<div class="btn btn-primary"><a href="#project-contacts" onclick="currentSlide(4)">Заказать</a></div>
 								</div>
 							</div>
 						</div>
@@ -186,7 +148,7 @@
 								</div>
 								<div class="content-container_block">
 									<div class="price">от 7500 грн</div>
-									<div class="btn btn-primary">Заказать</div>
+									<div class="btn btn-primary"><a href="#project-contacts" onclick="currentSlide(4)">Заказать</a></div>
 								</div>
 							</div>
 						</div>
@@ -197,11 +159,11 @@
 										<img src="images/shop-199x150.jpg" alt="интернет-магазин">
 									</div>
 								<div class="content-container_block service-description">
-									<p>Полноценный интернет-магазин, построенный на системе Opencart со всевозможными функциями, мультиязычный, работа с БД</p>
+									<p>Полноценный интернет-магазин, построенный на CRM-системе со всевозможными функциями, мультиязычный, работа с БД</p>
 								</div>
 								<div class="content-container_block">
 									<div class="price">от 10000 грн</div>
-									<div class="btn btn-primary">Заказать</div>
+									<div class="btn btn-primary"><a href="#project-contacts" onclick="currentSlide(4)">Заказать</a></div>
 								</div>
 							</div>
 						</div>
@@ -213,19 +175,7 @@
 <!-- Page 03 -->
 			<div id="project-about" class="one-page" style="background-image: url(images/bg3.jpg);">
 				<!-- Social contacts menu -->
-				<div class="row justify-content-between align-items-center">
-					<div class="col-md-auto"></div>
-					<div class="col-md-auto">
-						<ul class="project-social-icons">
-							<li><a href="mailto:xortica87@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-							<li><a href="viber://forward?text=380665458441"><i class="fab fa-viber"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/artem-safonov-5a52a6149/"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" class="skype-button rounded" data-contact-id="artem_safonov"><i class="fab fa-skype"></i></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=380665458441"><i class="fab fa-whatsapp-square"></i></a></li>
-							<li><a href="tg://resolve?domain=artem_safonov"><i class="fab fa-telegram"></i></a></li>
-						</ul>
-					</div>
-				</div>
+				<?php require 'social-contacts-menu.php'; ?>
 				<!-- Social contacts menu end-->
 				<div class="row">
 					<div class="col-md"></div>
@@ -247,19 +197,7 @@
 <!-- Page 04 -->
 			<div id="project-contacts" class="one-page" style="background-image: url(images/bg4.jpg);">
 				<!-- Social contacts menu -->
-				<div class="row justify-content-between align-items-center">
-					<div class="col-md-auto"></div>
-					<div class="col-md-auto">
-						<ul class="project-social-icons">
-							<li><a href="mailto:xortica87@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-							<li><a href="viber://forward?text=380665458441"><i class="fab fa-viber"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/artem-safonov-5a52a6149/"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" class="skype-button rounded" data-contact-id="artem_safonov"><i class="fab fa-skype"></i></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=380665458441"><i class="fab fa-whatsapp-square"></i></a></li>
-							<li><a href="tg://resolve?domain=artem_safonov"><i class="fab fa-telegram"></i></a></li>
-						</ul>
-					</div>
-				</div>
+				<?php require 'social-contacts-menu.php'; ?>
 				<!-- Social contacts menu end-->
 				<div class="row">
 					<div class="container">
@@ -276,34 +214,7 @@
 					</div>
 				</div>
 				<!-- Contact Form -->
-				<div class="container page-content-center">
-					<form action="send.php" enctype="text/plain" class="project-form" method="post">
-						<div class="row form-group">
-							<div class="col-md-6">
-								<input type="text" id="fname" class="form-control" placeholder="Ваше имя" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-6">
-								<input type="text" id="lname" class="form-control" placeholder="Ваша фамилия" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<input type="text" id="email" class="form-control" placeholder="Ваш email" required>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Сообщение пишите сюда" required></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Отправить" class="btn btn-primary">
-						</div>
-					</form>
-					<h3><?php include "send.php" ?></h3>
-				</div>
+				<?php require "contact-form.php"; ?>
 			</div>
 			
 			<!-- Vertical page-numbers -->
@@ -328,21 +239,10 @@
 		<script>window.jQuery || document.write('<script src="/js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 		<script src='js/main.js' ></script>
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 		<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js" async defer></script>
+		<script src="js/preloader.js"></script>
 		<!-- Form send mail script ajax -->
-		<script type="text/javascript">
-		$(document).ready(function(){
-    		$("#form").submit(function() {
-	            var form_data = $(this).serialize();
-	            $.ajax({
-	            type: "POST", 
-	            url: "send.php",
-	            data: form_data,
-	            success: function() {
-                   alert("Ваше сообщение отпрвлено!");
-            	});
-		    });
-		});    
-</script>
+		<script src="js/common.js"></script>
 	</body>
 </html>
