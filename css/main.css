@@ -258,7 +258,8 @@ h2, p {
   position: absolute;
   bottom: 3em;
   left: 10em;
-  right: 10em; }
+  right: 10em;
+  font-size: 1.1rem; }
   .content-cms-item {
     margin-right: 2rem;
     padding: 5px; }
@@ -423,5 +424,24 @@ input {
   @media screen and (max-width: 768px) {
     .slider-nav .move-left {
       right: 55px; } }
+
+/* Confirm mail */
+.confirm {
+  display: none;
+  z-index: 999;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+  text-align: center; }
+
+.confirm_message {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  width: 30%; }
 
 /*# sourceMappingURL=main.css.map */

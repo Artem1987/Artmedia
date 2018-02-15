@@ -234,8 +234,22 @@ h2, p
 			display: none
 			opacity: 0
 /* Content */
+.project-main_content
+	line-height: 2em
+	background-color: #383838
+	opacity: 0.9
+	border-radius: 6px
+	margin: 2em
+	padding: 1.5em
+	li
+		list-style-type: square
 .content-cms
 	text-align: center
+	font-size: 1.1rem
+	position: absolute
+	bottom: 3em
+	left: 10em
+	right: 10em
 	font-size: 1.1rem
 	&-item
 		margin-right: 2rem
@@ -385,3 +399,21 @@ input
 		right: 160px
 		@media screen and (max-width: 768px)
 			right: 55px
+/* Confirm mail */
+.confirm
+	display: none
+	z-index: 999
+	background-color: $bg
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	opacity: .5
+	text-align: center
+.confirm_message
+	display: none
+	position: relative
+	z-index: 1000
+	width: 30%
+

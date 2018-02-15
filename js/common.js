@@ -7,7 +7,8 @@ $(document).ready(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$(".confirm, .confirm_message").show();
+			header('Refresh: 3; URL=index.php');
 			$("#mail").trigger("reset");
 		});
 		return false;

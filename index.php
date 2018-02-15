@@ -6,6 +6,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="Artem Safonov">
 		<title>Веб-студия Артёма Сафонова</title>
+		<!--Localization -->
+		<link rel="alternate" hreflang="x-default" href="http://webjedi.com.ua" />
 		<!-- Bootstrap grid CSS -->
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
@@ -233,6 +235,11 @@
 					<i class="fa fa-angle-left" aria-hidden="true"></i>
 				</div>
 			</div>
+		</div>
+		<!-- Confirm contact form popup -->
+		<div class="confirm"></div>
+		<div class="confirm_message" id="popup">
+			Спасибо за заявку! Скоро мы с Вами свяжемся!
 		</div>
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
