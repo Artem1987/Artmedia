@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112910750-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112910750-2');
+		</script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-9976536531352055",
+		    enable_page_level_ads: true
+		  });
+		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
+		<meta name="description" content="Веб-студия Артёма Сафонова. Создание сайтов под ключ">
+		<meta name="keywords" content="создать сайт, веб-студия полтава, сайт под ключ, сделать сайт полтава, сайт полтава, веб студия, веб разработка полтава, landing page, создание сайтов, " />
 		<meta name="author" content="Artem Safonov">
 		<title>Веб-студия Артёма Сафонова</title>
 		<!--Localization -->
