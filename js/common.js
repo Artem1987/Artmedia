@@ -7,9 +7,9 @@ $(document).ready(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			$(".confirm, .confirm_message").show();
-			header('Refresh: 3; URL=index.php');
 			$("#mail").trigger("reset");
+			$("#popup-page").fadeIn(400);
+			setTimeout('location.replace("/index.php")', 3000);
 		});
 		return false;
 	});

@@ -13,3 +13,5 @@ $pagetitle = "Новая заявка с сайта \"$sitename\"";
 if($name!=""&&$surname!=""&&$email!=""&&$text!=""){
     mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 }
+?>
+
