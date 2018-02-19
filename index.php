@@ -20,9 +20,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Веб-студия Артёма Сафонова. Создание сайтов под ключ">
-		<meta name="keywords" content="создать сайт, веб-студия полтава, сайт под ключ, сделать сайт полтава, сайт полтава, веб студия, веб разработка полтава, landing page, создание сайтов, " />
+		<meta name="keywords" content="создать сайт, веб-студия полтава, сайт под ключ, сделать сайт полтава, сайт полтава, веб студия, веб разработка полтава, landing page, создание сайтов, веб студия полтава, создать web сайт" />
 		<meta name="author" content="Artem Safonov">
-		<title>Веб-студия Артёма Сафонова</title>
+		<title>Веб-студия Артёма Сафонова. Создание сайтов "под ключ"</title>
 		<!--Localization -->
 		<link rel="alternate" hreflang="x-default" href="http://webjedi.com.ua" />
 		<!-- Bootstrap grid CSS -->
@@ -178,7 +178,7 @@
 										<img src="images/shop-199x150.jpg" alt="интернет-магазин">
 									</div>
 								<div class="content-container_block service-description">
-									<p>Полноценный интернет-магазин, построенный на CRM-системе со всевозможными функциями, мультиязычный, работа с БД</p>
+									<p>Полноценный интернет-магазин, построенный на CRM-системе со всевозможными функциями, мультиязычный, работа с базой данных</p>
 								</div>
 								<div class="content-container_block">
 									<div class="price">от 10000 грн</div>
@@ -227,7 +227,7 @@
 								<li><span class="contacts-content"><i class="fa fa-phone" aria-hidden="true"></i> +38 066 545 84 41</span></li>
 								<li><span class="contacts-content"><i class="far fa-clock"></i>
 								Время работы: ежедневно с 9 до 19</span></li>
-								<li><span class="contacts-content"><i class="fas fa-at"></i><a href="mailto:xortica87@gmail.com"> E-mail: xortica87@gmail.com</a></span></li>
+								<li><span class="contacts-content"><i class="fas fa-at"></i><a href="mailto:xortica87@gmail.com"> E-mail: service@webjedi.com.ua</a></span></li>
 							</ul>
 						</div>
 					</div>
