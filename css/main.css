@@ -31,8 +31,8 @@ a:hover {
 
 h2, p {
   color: #bbbbbb;
-  /* Preloader */ }
-
+   }
+/* Preloader */
 .preloader {
   position: fixed;
   left: 0;

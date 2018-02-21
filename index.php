@@ -28,7 +28,7 @@
 		<!-- Bootstrap grid CSS -->
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
-		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
 		<div id="page-preloader" class="preloader">
@@ -264,11 +264,11 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script>window.jQuery || document.write('<script src="/js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-		<script src='js/main.js' ></script>
+		<script async src='js/main.js' ></script>
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 		<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js" async defer></script>
 		<script src="js/preloader.js"></script>
 		<!-- Form send mail script ajax -->
-		<script src="js/common.js"></script>
+		<script async src="js/common.js"></script>
 	</body>
 </html>
