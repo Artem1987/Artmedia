@@ -265,7 +265,7 @@
 		<script>window.jQuery || document.write('<script src="/js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 		<script async src='js/main.js' ></script>
-		<script src="https://code.jquery.com/jquery-1.11.2.min.js">
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js" async defer></script>
 		<script src="js/preloader.js"></script>
 		<!-- Form send mail script ajax -->
